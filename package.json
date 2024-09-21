@@ -20,7 +20,9 @@
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx .",
 		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore **/*.css",
 		"lint": "run-p run-tsc run-eslint run-stylelint",
-		"validate": "run-p lint test:ci test:e2e:headless"
+		"validate": "run-p lint test:ci test:e2e:headless",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
 	"dependencies": {
 		"@tanstack/react-query": "5.29.2",
@@ -63,6 +65,7 @@
 		"eslint-plugin-react-prefer-function-component": "3.3.0",
 		"eslint-plugin-testing-library": "6.2.0",
 		"eslint-plugin-unicorn": "52.0.0",
+		"gh-pages": "^6.1.1",
 		"husky": "9.0.11",
 		"jsdom": "24.0.0",
 		"lint-staged": "15.2.2",
