@@ -22,7 +22,7 @@
 		"lint": "run-p run-tsc run-eslint run-stylelint",
 		"validate": "run-p lint test:ci test:e2e:headless",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build"
+		"deploy": "gh-pages -d dist"
 	},
 	"dependencies": {
 		"@tanstack/react-query": "5.29.2",
@@ -104,7 +104,7 @@
 	},
 	"pnpm": {
 		"overrides": {
-			"headers-polyfill": "3.1.2"
+			"headers-polyfill": "3.1.F2"
 		}
 	}
 }
