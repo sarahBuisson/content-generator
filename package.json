@@ -22,7 +22,7 @@
 		"lint": "run-p run-tsc run-eslint run-stylelint",
 		"validate": "run-p lint test:ci test:e2e:headless",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d dist -u \"github-actions-bot <support+actions@github.com>\""
 	},
 	"dependencies": {
 		"@tanstack/react-query": "5.29.2",
