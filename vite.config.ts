@@ -25,6 +25,7 @@ export default defineConfig(({ mode }) => ({
 			reportsDirectory: 'coverage'
 		}
 	},
+	base: 'content-generator',
 	plugins: [
 		tsconfigPaths(),
 		react(),
@@ -58,6 +59,6 @@ export default defineConfig(({ mode }) => ({
 							]
 						}
 					})
-			  ])
+				])
 	]
 }))
